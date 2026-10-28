@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pesan Telor Gulung Bang Bewok secara online"
+    />
+    <title>Telor Gulung Bang Bewok</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navigasi utama">
+        <a class="brand" href="#beranda"
+          ><span class="brand-mark"
+            ><img src="fam.png" alt="Foto profil" /></span
+          >Telor Gulung <strong>Bang Bewok</strong></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          ☰
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#beranda">Beranda</a>
+          <a href="#pesan">Pesan Sekarang</a>
+          <a href="#lokasi">Lokasi</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-content">
+          <p class="eyebrow">Jajanan Hangat &amp; Gurih</p>
+          <h1>Telor Gulung<br /><span>Bang Bewok</span></h1>
+          <p>
+            Fresh setiap hari, cocok dinikmati kapan saja. Pilih menu favoritmu
+            dan pesan langsung dari sini.
+          </p>
+          <a class="button button-primary" href="#pesan">Pesan Sekarang</a>
+        </div>
+        <figure class="hero-art" aria-label="Maskot Telor Gulung Bang Bewok">
+          <img
+            src="mascot-telor-gulung-bang-bewok.png"
+            alt="Maskot telor gulung lucu memegang tusuk makanan"
+          />
+        </figure>
+      </section>
+
+      <!-- Semua langkah pemesanan berada dalam satu alur bergantian -->
+      <section class="order-section" id="pesan">
+        <div class="container">
+          <!-- LANGKAH 1: pilih menu dan isi data -->
+          <div class="order-step active" id="menuStep">
+            <div class="section-heading">
+              <p class="eyebrow">Langkah 1 dari 3</p>
+              <h2>Pilih Menu</h2>
+            </div>
+
+            <form id="orderForm">
+              <div class="menu-list">
+                <label class="menu-row">
+                  <input
+                    class="menu-check"
+                    type="checkbox"
+                    value="Telor Gulung Bakso"
+                    data-price="2000"
+                  />
+                  <span class="menu-name">Telor Gulung Bakso</span
+                  ><strong>Rp 2.000</strong>
+                  <span class="quantity-wrap"
+                    ><span>Jumlah</span
+                    ><input
+                      class="menu-qty"
+                      type="number"
+                      min="1"
+                      max="99"
+                      value="1"
+                      disabled
+                  /></span>
+                </label>
+                <label class="menu-row">
+                  <input
+                    class="menu-check"
+                    type="checkbox"
+                    value="Telor Gulung Basreng"
+                    data-price="2000"
+                  />
+                  <span class="menu-name">Telor Gulung Basreng</span
+                  ><strong>Rp 2.000</strong>
+                  <span class="quantity-wrap"
+                    ><span>Jumlah</span
+                    ><input
+                      class="menu-qty"
+                      type="number"
+                      min="1"
+                      max="99"
+                      value="1"
+                      disabled
+                  /></span>
+                </label>
+                <label class="menu-row">
+                  <input
+                    class="menu-check"
+                    type="checkbox"
+                    value="Telor Gulung Sosis ayam"
+                    data-price="2000"
+                  />
+                  <span class="menu-name">Telor Gulung Sosis ayam</span
+                  ><strong>Rp 2.000</strong>
+                  <span class="quantity-wrap"
+                    ><span>Jumlah</span
+                    ><input
+                      class="menu-qty"
+                      type="number"
+                      min="1"
+                      max="99"
+                      value="1"
+                      disabled
+                  /></span>
+                </label>
+                <label class="menu-row">
+                  <input
+                    class="menu-check"
+                    type="checkbox"
+                    value="Telor Gulung Sosis Sapi"
+                    data-price="2000"
+                  />
+                  <span class="menu-name">Telor Gulung Sosis Sapi</span
+                  ><strong>Rp 2.000</strong>
+                  <span class="quantity-wrap"
+                    ><span>Jumlah</span
+                    ><input
+                      class="menu-qty"
+                      type="number"
+                      min="1"
+                      max="99"
+                      value="1"
+                      disabled
+                  /></span>
+                </label>
+                <label class="menu-row">
+                  <input
+                    class="menu-check"
+                    type="checkbox"
+                    value="Telor Gulung Otak-Otak"
+                    data-price="2000"
+                  />
+                  <span class="menu-name">Telor Gulung Otak-Otak</span
+                  ><strong>Rp 2.000</strong>
+                  <span class="quantity-wrap"
+                    ><span>Jumlah</span
+                    ><input
+                      class="menu-qty"
+                      type="number"
+                      min="1"
+                      max="99"
+                      value="1"
+                      disabled
+                  /></span>
+                </label>
+                <label class="menu-row">
+                  <input
+                    class="menu-check"
+                    type="checkbox"
+                    value="Telor Gulung Fishroll"
+                    data-price="2000"
+                  />
+                  <span class="menu-name">Telor Gulung Fishroll</span
+                  ><strong>Rp 2.000</strong>
+                  <span class="quantity-wrap"
+                    ><span>Jumlah</span
+                    ><input
+                      class="menu-qty"
+                      type="number"
+                      min="1"
+                      max="99"
+                      value="1"
+                      disabled
+                  /></span>
+                </label>
+                <label class="menu-row">
+                  <input
+                    class="menu-check"
+                    type="checkbox"
+                    value="Telor Gulung Original"
+                    data-price="2000"
+                  />
+                  <span class="menu-name">Telor Gulung Original</span
+                  ><strong>Rp 2.000</strong>
+                  <span class="quantity-wrap"
+                    ><span>Jumlah</span
+                    ><input
+                      class="menu-qty"
+                      type="number"
+                      min="1"
+                      max="99"
+                      value="1"
+                      disabled
+                  /></span>
+                </label>
+              </div>
+
+              <div class="customer-fields">
+                <label
+                  >Nama Pemesan<input
+                    id="customerName"
+                    type="text"
+                    placeholder="Masukkan nama Anda"
+                    autocomplete="name"
+                /></label>
+                <label
+                  >Jam Pengambilan<input
+                    id="pickupTime"
+                    type="time"
+                    min="16:00"
+                    max="23:59"
+                    required
+                /></label>
+                <label
+                  >Catatan Tambahan<textarea
+                    id="customerNote"
+                    rows="3"
+                    placeholder="Contoh: pedas sedang, saus campur/pisah?, jumlah saus, dsb."
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="order-total-bar">
+                <div>
+                  <span>Total Harga</span><strong id="totalPrice">Rp 0</strong>
+                </div>
+                <button
+                  class="button button-primary"
+                  type="button"
+                  id="nextPayment"
+                >
+                  Lanjut Pilih Pembayaran
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- LANGKAH 2: pilih metode pembayaran -->
+          <div class="order-step" id="paymentStep">
+            <div class="section-heading">
+              <p class="eyebrow">Langkah 2 dari 3</p>
+              <h2>Pilih Cara Pembayaran</h2>
+              <p class="chosen-total">
+                Total pesanan: <strong id="paymentTotal">Rp 0</strong>
+              </p>
+            </div>
+            <div class="payment-options">
+              <button type="button" class="payment-card" id="qrisOption">
+                <span>📱</span><strong>Bayar Pakai QRIS</strong>
+              </button>
+              <button type="button" class="payment-card" id="cashOption">
+                <span>💵</span><strong>Bayar Tunai</strong>
+              </button>
+            </div>
+            <button type="button" class="back-button" data-back="menu">
+              ← Kembali pilih menu
+            </button>
+          </div>
+
+          <!-- LANGKAH 3: QRIS atau pembayaran tunai -->
+          <div class="order-step" id="confirmationStep">
+            <div class="section-heading">
+              <p class="eyebrow">Langkah 3 dari 3</p>
+              <h2 id="paymentTitle">Konfirmasi Pembayaran</h2>
+            </div>
+
+            <div class="payment-result" id="qrisResult">
+              <p>Silakan pindai kode QRIS di bawah ini</p>
+              <p class="business-name">
+                Nama Usaha: <strong>TELOR GULUNG BANG BEWOK</strong>
+              </p>
+              <p class="payment-total">
+                Total Bayar: <strong id="qrisTotal">Rp 0</strong>
+              </p>
+              <!-- Ganti src ini dengan alamat foto QRIS Anda. File JPEG yang diunggah: qris-bang-bewok.jpeg -->
+              <button
+                class="qris-image-button"
+                type="button"
+                id="openQris"
+                aria-label="Perbesar QRIS"
+              >
+                <img
+                  id="qrisImage"
+                  src="qris-bang-bewok.jpeg"
+                  alt="QRIS Telor Gulung Bang Bewok"
+                />
+              </button>
+              <button
+                class="button button-whatsapp"
+                type="button"
+                id="sendQrisOrder"
+              >
+                Sudah Bayar — Kirim Pesanan ke WhatsApp
+              </button>
+            </div>
+
+            <div class="payment-result" id="cashResult">
+              <div class="cash-icon">💵</div>
+              <p>Siapkan uang tunai sebesar</p>
+              <strong class="cash-total" id="cashTotal">Rp 0</strong>
+              <p>
+                Pembayaran langsung ke penjual saat pesanan diantar/diambil.
+              </p>
+              <button
+                class="button button-whatsapp"
+                type="button"
+                id="sendCashOrder"
+              >
+                Kirim Pesanan ke WhatsApp
+              </button>
+            </div>
+            <button type="button" class="back-button" data-back="payment">
+              ← Kembali pilih pembayaran
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section" id="lokasi">
+        <div class="container location-card">
+          <div>
+            <p class="eyebrow">Kunjungi Kami</p>
+            <h2>Lokasi Gerobak</h2>
+            <p>
+              Alamat: Depan Kelurahan, RT.001/RW.004, Sudimara Pinang, Kec.
+              Pinang, Kota Tangerang, Banten 15145
+            </p>
+            <a
+              class="button location-button"
+              href="https://maps.app.goo.gl/M8d9Rcu2svfTgUHL8"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buka lokasi gerobak di Google Maps"
+            >
+              📍 Arahkan Lokasi
+            </a>
+          </div>
+          <div>
+            <p class="eyebrow">Jam Buka</p>
+            <h3>16.00 – 23.59</h3>
+            <p>Setiap hari • Terima QRIS &amp; Tunai</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>Setiap hari: 16.00 – 23.59</p>
+        <p>Terima QRIS &amp; Tunai</p>
+        <p>© <span id="copyrightYear"></span> Telor Gulung Bang Bewok</p>
+      </div>
+    </footer>
+
+    <!-- Modal untuk memperbesar QRIS -->
+    <div
+      class="modal"
+      id="qrisModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="QRIS diperbesar"
+    >
+      <button class="modal-close" type="button" aria-label="Tutup gambar">
+        ×
+      </button>
+      <img
+        src="qris-bang-bewok.jpeg"
+        alt="QRIS Telor Gulung Bang Bewok diperbesar"
+      />
+    </div>
+
+    <script>
+      // Nomor WhatsApp untuk tujuan pesanan. Ubah hanya angka ini tanpa simbol atau spasi.
+      const WHATSAPP_NUMBER = "6285797562569";
+
+      const menuStep = document.getElementById("menuStep");
+      const paymentStep = document.getElementById("paymentStep");
+      const confirmationStep = document.getElementById("confirmationStep");
+      const totalPrice = document.getElementById("totalPrice");
+      let selectedPayment = "";
+      let currentTotal = 0;
+
+      const formatRupiah = (value) =>
+        "Rp " + new Intl.NumberFormat("id-ID").format(value);
+
+      function calculateTotal() {
+        currentTotal = 0;
+        document.querySelectorAll(".menu-row").forEach((row) => {
+          const check = row.querySelector(".menu-check");
+          const quantity = row.querySelector(".menu-qty");
+          quantity.disabled = !check.checked;
+          row.classList.toggle("selected", check.checked);
+          if (check.checked) {
+            const amount = Math.max(1, Number(quantity.value) || 1);
+            currentTotal += Number(check.dataset.price) * amount;
+          }
+        });
+        totalPrice.textContent = formatRupiah(currentTotal);
+        document.getElementById("paymentTotal").textContent =
+          formatRupiah(currentTotal);
+        document.getElementById("qrisTotal").textContent =
+          formatRupiah(currentTotal);
+        document.getElementById("cashTotal").textContent =
+          formatRupiah(currentTotal);
+      }
+
+      document
+        .getElementById("orderForm")
+        .addEventListener("change", calculateTotal);
+      document
+        .getElementById("orderForm")
+        .addEventListener("input", calculateTotal);
+
+      function showStep(step) {
+        document
+          .querySelectorAll(".order-step")
+          .forEach((item) => item.classList.remove("active"));
+        step.classList.add("active");
+        step.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      document.getElementById("nextPayment").addEventListener("click", () => {
+        const hasMenu = document.querySelector(".menu-check:checked");
+        const customerName = document
+          .getElementById("customerName")
+          .value.trim();
+        if (!hasMenu) {
+          alert("Silakan pilih minimal satu menu.");
+          return;
+        }
+        if (!customerName) {
+          alert("Silakan isi nama pemesan.");
+          document.getElementById("customerName").focus();
+          return;
+        }
+        const pickupTime = document.getElementById("pickupTime").value;
+        if (!pickupTime) {
+          alert("Silakan pilih jam pengambilan pesanan.");
+          document.getElementById("pickupTime").focus();
+          return;
+        }
+        if (pickupTime < "16:00" || pickupTime > "23:59") {
+          alert("Jam pengambilan hanya antara 16.00 sampai 23.59.");
+          document.getElementById("pickupTime").focus();
+          return;
+        }
+        calculateTotal();
+        showStep(paymentStep);
+      });
+
+      function choosePayment(method) {
+        selectedPayment = method;
+        document
+          .getElementById("qrisResult")
+          .classList.toggle("active", method === "QRIS");
+        document
+          .getElementById("cashResult")
+          .classList.toggle("active", method === "Tunai");
+        document.getElementById("paymentTitle").textContent =
+          method === "QRIS" ? "Pembayaran QRIS" : "Pembayaran Tunai";
+        calculateTotal();
+        showStep(confirmationStep);
+      }
+
+      document
+        .getElementById("qrisOption")
+        .addEventListener("click", () => choosePayment("QRIS"));
+      document
+        .getElementById("cashOption")
+        .addEventListener("click", () => choosePayment("Tunai"));
+
+      document.querySelectorAll("[data-back]").forEach((button) =>
+        button.addEventListener("click", () => {
+          showStep(button.dataset.back === "menu" ? menuStep : paymentStep);
+        }),
+      );
+
+      function sendOrder() {
+        const items = [];
+        document.querySelectorAll(".menu-row").forEach((row) => {
+          const check = row.querySelector(".menu-check");
+          if (check.checked) {
+            const quantity = Math.max(
+              1,
+              Number(row.querySelector(".menu-qty").value) || 1,
+            );
+            const price = Number(check.dataset.price);
+            items.push(
+              `- ${check.value}: ${quantity} x ${formatRupiah(price)} = ${formatRupiah(quantity * price)}`,
+            );
+          }
+        });
+        if (!items.length) return;
+
+        const name =
+          document.getElementById("customerName").value.trim() || "-";
+        const note =
+          document.getElementById("customerNote").value.trim() || "-";
+        const pickupTime = document.getElementById("pickupTime").value;
+        const message = [
+          "Halo Telor Gulung Bang Bewok, saya ingin memesan:",
+          "",
+          ...items,
+          "",
+          `Total: ${formatRupiah(currentTotal)}`,
+          `Cara Bayar: ${selectedPayment}`,
+          `Nama Pemesan: ${name}`,
+          `Jam Pengambilan: ${pickupTime}`,
+          `Catatan: ${note}`,
+        ].join("\n");
+        window.open(
+          `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+          "_blank",
+          "noopener",
+        );
+      }
+
+      document
+        .getElementById("sendQrisOrder")
+        .addEventListener("click", sendOrder);
+      document
+        .getElementById("sendCashOrder")
+        .addEventListener("click", sendOrder);
+
+      // Menu mobile sederhana
+      const toggle = document.querySelector(".menu-toggle");
+      const navMenu = document.getElementById("navMenu");
+      toggle.addEventListener("click", () => {
+        const open = navMenu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open);
+        toggle.textContent = open ? "✕" : "☰";
+      });
+      navMenu.querySelectorAll("a").forEach((link) =>
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.textContent = "☰";
+        }),
+      );
+
+      // Klik QRIS untuk melihat versi diperbesar
+      const modal = document.getElementById("qrisModal");
+      const qrisImage = document.getElementById("qrisImage");
+      document.getElementById("openQris").addEventListener("click", () => {
+        modal.querySelector("img").src = qrisImage.src;
+        modal.classList.add("open");
+      });
+      modal
+        .querySelector(".modal-close")
+        .addEventListener("click", () => modal.classList.remove("open"));
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) modal.classList.remove("open");
+      });
+
+      document.getElementById("copyrightYear").textContent =
+        new Date().getFullYear();
+      calculateTotal();
+    </script>
+  </body>
+</html>
