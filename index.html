@@ -216,12 +216,7 @@
                     autocomplete="name"
                 /></label>
                 <label
-                  >Jam Pengambilan<input
-                    id="pickupTime"
-                    type="time"
-                    min="16:00"
-                    max="23:59"
-                    required
+                  >Jam Pengambilan<input id="pickupTime" type="time" required
                 /></label>
                 <label
                   >Catatan Tambahan<textarea
@@ -448,11 +443,6 @@
         const pickupTime = document.getElementById("pickupTime").value;
         if (!pickupTime) {
           alert("Silakan pilih jam pengambilan pesanan.");
-          document.getElementById("pickupTime").focus();
-          return;
-        }
-        if (pickupTime < "16:00" || pickupTime > "23:59") {
-          alert("Jam pengambilan hanya antara 16.00 sampai 23.59.");
           document.getElementById("pickupTime").focus();
           return;
         }
